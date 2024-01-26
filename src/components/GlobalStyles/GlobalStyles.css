@@ -1,0 +1,36 @@
+:root {
+
+  --Giang-primary-color: #00c894;
+  --Giang-primary-color-1: #007355;
+  --Giang-background-color: #F9F9F9;
+}
+body{
+	line-height: 1.5;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--Giang-background-color);
+}
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+a {
+	text-decoration: none;
+}
+ul, ol{
+	text-decoration: none;
+}
+
+
+/* RESPONSIVE */
+@media only screen and (max-width: 600px) {
+  /* Styles cho mobile */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Styles cho tablet */
+}
+
+@media only screen and (min-width: 1025px) {
+  /* Styles cho desktop */
+}
