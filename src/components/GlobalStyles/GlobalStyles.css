@@ -2,6 +2,7 @@
 
   --Giang-primary-color: #00c894;
   --Giang-primary-color-1: #007355;
+  --Giang-primary-color-hover: #e3fff8;
   --Giang-background-color: #F9F9F9;
 }
 body{
@@ -16,21 +17,34 @@ body{
 }
 a {
 	text-decoration: none;
+  color: black;
 }
 ul, ol{
-	text-decoration: none;
+	list-style: none;
 }
 
+.GiangContent {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
 
 /* RESPONSIVE */
 @media only screen and (max-width: 600px) {
-  /* Styles cho mobile */
+  .GiangContent {
+    padding: 80px 10px 30px 10px;
+  }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-  /* Styles cho tablet */
+  .GiangContent {
+    padding: 80px 10px 30px 10px;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
   /* Styles cho desktop */
+  .GiangContent {
+    padding: 100px 10px 30px 10px;
+  }
 }
