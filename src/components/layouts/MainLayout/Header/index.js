@@ -20,7 +20,7 @@ function Header() {
       <header className={clsx(Styles.header)}>
         <nav className={clsx(Styles.nav, Styles.container)}>
           <div className={clsx(Styles.nav__data)}>
-            <Link to="#" className={clsx(Styles.nav__logo)}>
+            <Link to="/" className={clsx(Styles.nav__logo)}>
             <img src={logo} alt="Logo"/>
             </Link>
             <div className={clsx(Styles.nav__toggle)} onClick={toggleMenu}>

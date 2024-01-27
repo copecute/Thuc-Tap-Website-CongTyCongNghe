@@ -14,6 +14,7 @@ body{
 	box-sizing: border-box;
 	margin:0;
 	padding:0;
+  border: 0;
 }
 a {
 	text-decoration: none;
@@ -29,10 +30,52 @@ ul, ol{
   margin: auto;
 }
 
+/* button */
+.btn {
+  width: 110px;
+  height: 50px;
+  background-color: var(--Giang-primary-color);
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 7px;
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  background-color: var(--Giang-primary-color-1);
+}
+
+.primaryBtn {
+  width: 180px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  letter-spacing: 0;
+  color: #fff;
+  font-weight: 500;
+  margin-right: 10px;
+  box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+}
+
+.primaryBtn:hover {
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
 /* RESPONSIVE */
 @media only screen and (max-width: 600px) {
   .GiangContent {
     padding: 80px 10px 30px 10px;
+  }
+  .primaryBtn {
+    width: 140px;
+    height: 55px;
+    font-size: 13.5px;
+    margin-right: 1rem;
   }
 }
 
