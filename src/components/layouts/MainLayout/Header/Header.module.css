@@ -54,6 +54,14 @@
     height: 50px;
     transition: color 0.3s;
   }
+  .RightMenubtn {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .Cart svg {
+    color: var(--Giang-primary-color);
+  }
   .nav__toggle {
     position: relative;
     width: 32px;
@@ -73,6 +81,9 @@
     opacity: 0;
   }
   @media screen and (max-width: 1118px) {
+    .nav__menu .Cart {
+      display: none;
+    }
     .nav__menu {
       background-color: #fff;
       position: absolute;
@@ -184,7 +195,10 @@
       display: flex;
       justify-content: space-between;
     }
-    .nav__toggle {
+    .Cart {
+      padding-right: 10px;
+    }
+    .RightMenubtn {
       display: none;
     }
     .nav__list {

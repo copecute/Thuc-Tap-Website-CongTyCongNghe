@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-import ProductList from "components/ProductsList";
+import ProductList from "components/ProductsList/ServerList";
 import Section1 from './Section/1'
 
 function About() {

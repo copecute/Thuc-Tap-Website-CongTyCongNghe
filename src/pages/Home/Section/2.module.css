@@ -19,7 +19,7 @@
   .icon svg {
     width: 30px;
     height: 30px;
-    color: #6b85d8;
+    color: var(--Giang-primary-color);
   }
 
   .featured_info {
@@ -30,7 +30,6 @@
     display: block;
     font-size: 21px;
     line-height: 33px;
-    color: var(--lg-heading);
   }
   .featured_info p {
     display: block;
