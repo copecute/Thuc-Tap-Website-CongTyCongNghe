@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef, Fragment } from 'react';
 import clsx from 'clsx';
 import Styles from './Details.module.css';
-import Home1 from 'pages/Home/Session/1.module.css';
+import Home1 from 'pages/Home/Section/1.module.css';
 import { Link } from 'react-router-dom';
 
-function ProductDetails({ title, oldPrice, Price, category, image }) {
+function ProductDetails({ title, oldPrice, Price, category, image1, image2, image3, image4 }) {
   // State quản lý id của hình ảnh đang hiển thị
   const [imgId, setImgId] = useState(1);
 
@@ -51,31 +51,31 @@ function ProductDetails({ title, oldPrice, Price, category, image }) {
           <div className={clsx(Styles.productImgs)}>
             <div className={clsx(Styles.imgDisplay)}>
               <div className={clsx(Styles.imgShowcase)} ref={imgShowcaseRef}>
-                <img src={image} alt={title} />
-                <img src={image} alt={title} />
-                <img src={image} alt={title} />
-                <img src={image} alt={title} />
+              <img src={image1} alt={title} />
+              <img src={image2} alt={title} />
+              <img src={image3} alt={title} />
+              <img src={image4} alt={title} />
               </div>
             </div>
             <div className={clsx(Styles.imgSelect)}>
               <div className={clsx(Styles.imgItem)}>
                 <Link to="#" onClick={(event) => handleImageClick(event, 1)}>
-                  <img src={image} alt={title} />
+                  <img src={image1} alt={title} />
                 </Link>
               </div>
               <div className={clsx(Styles.imgItem)}>
                 <Link to="#" onClick={(event) => handleImageClick(event, 2)}>
-                  <img src={image} alt={title} />
+                  <img src={image2} alt={title} />
                 </Link>
               </div>
               <div className={clsx(Styles.imgItem)}>
                 <Link to="#" onClick={(event) => handleImageClick(event, 3)}>
-                  <img src={image} alt={title} />
+                  <img src={image3} alt={title} />
                 </Link>
               </div>
               <div className={clsx(Styles.imgItem)}>
                 <Link to="#" onClick={(event) => handleImageClick(event, 4)}>
-                  <img src={image} alt={title} />
+                  <img src={image4} alt={title} />
                 </Link>
               </div>
             </div>

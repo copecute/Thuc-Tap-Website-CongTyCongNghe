@@ -1,14 +1,9 @@
 .Giang_0 {
-    max-width: 1200px;
     position: relative;
+    max-width: 1200px;
+    height: 700px;
     margin: 0px auto;
-    height: 711.037px;
     padding: 0px;
-    border: 0px none rgb(0, 0, 0);
-    outline: rgb(0, 0, 0) none 0px;
-    vertical-align: baseline;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
 }
 
 .Giang_1 {
@@ -24,6 +19,7 @@
 }
 
 .Giang_2 {
+    top: 55px;
     background-color: #63636312;
     border-radius: 20px;
     position: absolute;
@@ -42,8 +38,8 @@
 
 .Giang_3 {
     width: 541px;
-    height: 175.188px;
-    top: 499.005px;
+    height: 175px;
+    top: 400px;
     left: 113px;
     position: absolute;
     margin: 0px;
@@ -58,7 +54,7 @@
 .Giang_4 {
     position: absolute;
     width: 100%;
-    height: 175.188px;
+    height: 175px;
     overflow: hidden;
     margin: 0px;
     padding: 0px;
@@ -91,24 +87,10 @@
     -webkit-font-smoothing: antialiased;
 }
 
-.Giang_6 {
-    width: 423px;
-    top: 106px;
-    left: 61.5px;
-    position: absolute;
-    margin: 0px;
-    padding: 0px;
-    border: 0px none rgb(0, 0, 0);
-    outline: rgb(0, 0, 0) none 0px;
-    vertical-align: baseline;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-}
-
 .Giang_7 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
-    line-height: 57.6px;
+    line-height: 1.5;
     color: rgb(0, 0, 0);
     text-align: left;
     width: 100%;
@@ -127,8 +109,8 @@
 
 .Giang_8 {
     width: 548px;
-    top: 198.099px;
-    left: 63.5px;
+    top: 150px;
+    left: 63px;
     position: absolute;
     margin: 0px;
     padding: 0px;
@@ -158,7 +140,7 @@
 
 .Giang_10 {
     width: 411px;
-    top: 545.099px;
+    top: 450px;
     left: 167.5px;
     position: absolute;
     margin: 0px;
@@ -190,7 +172,7 @@
 .Giang_18 {
     width: 449px;
     height: 355.212px;
-    top: 100px;
+    top: 70px;
     left: 679px;
     position: absolute;
     margin: 0px;
@@ -241,7 +223,7 @@
 .Giang_21 {
     width: 459px;
     height: 649.188px;
-    top: 25px;
+    top: 0;
     left: 677px;
     position: absolute;
     margin: 0px;
@@ -291,8 +273,8 @@
 
 .Giang_24 {
     width: 423px;
-    top: 548.099px;
     left: 682px;
+    top: 480px;
     position: absolute;
     margin: 0px;
     padding: 0px;
@@ -323,20 +305,6 @@
     -webkit-font-smoothing: antialiased;
 }
 
-.Giang_26 {
-    width: 423px;
-    top: 602.099px;
-    left: 681px;
-    position: absolute;
-    margin: 0px;
-    padding: 0px;
-    border: 0px none rgb(0, 0, 0);
-    outline: rgb(0, 0, 0) none 0px;
-    vertical-align: baseline;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-}
-
 .Giang_27 {
     font-size: 24px;
     line-height: 38.4px;
@@ -358,7 +326,7 @@
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1080px) {
     .Giang_0 {
         height: 1100px;
     }
@@ -383,22 +351,37 @@
 
     .Giang_18 {
         top: 500px;
-        left: 0;
+        width: 100%;
+        left: 0px;
+        right: 0px;
+    }
+
+    .Giang_19 {
+        left: 0px;
+        right: 0px;
+        width: 435px;
+        margin: 0px auto;
     }
 
     .Giang_21 {
         top: 340px;
-        left: 0;
+        width: 100%;
+        left: 0px;
+        right: 0px;
     }
 
-    .Giang_24,
-    .Giang_26 {
+    .Giang_22 {
+        left: 0px;
+        right: 0px;
+        width: 435px;
+        margin: 0px auto;
+    }
+
+    .Giang_24 {
         top: 810px;
-        left: 0;
-    }
-
-    .Giang_27 {
-        line-height: 130px;
+        width: 100%;
+        left: 0px;
+        right: 0px;
     }
 
     .Giang_3 {
@@ -412,22 +395,34 @@
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 950px) {
+@media only screen and (max-width: 600px) {
+    .Giang_3 {
+        top: 1000px;
+        left: -30px;
+        width: 120%;
+    }
 
-}
-@media only screen and (min-width: 600px) and (max-width: 1080px) {
-    .Giang_24,
-    .Giang_26 {
-        width: 100%;
-        top: 630px;
+    .Giang_10 {
+        top: 1045px;
         left: 0;
     }
 
-    .Giang_27 {
-        line-height: 120px;
+    .Giang_21 {
+        top: 444px;
     }
 
+    .Giang_24 {
+        top: 935px;
+    }
 }
+
+@media only screen and (max-width: 490px) {
+    .Giang_10 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 950px) {}
 
 @media only screen and (max-width: 600px) {
     /* style mobile */

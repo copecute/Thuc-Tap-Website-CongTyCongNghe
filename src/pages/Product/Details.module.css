@@ -16,6 +16,7 @@ img{
     transition: all 0.5s ease;
 }
 .imgShowcase img{
+    object-fit: cover;
     min-width: 100%;
 }
 .imgSelect{

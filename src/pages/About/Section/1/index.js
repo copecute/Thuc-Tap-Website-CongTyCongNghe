@@ -12,14 +12,12 @@ function Section1() {
           <div className={clsx(styles.Giang_5)}></div>
         </div>
       </div>
-      <div className={clsx(styles.Giang_6)}>
-        <h3 className={clsx(styles.Giang_7)}>
-          Giới thiệu về MinhGiangPC
-          <br />
-        </h3>
-      </div>
       <div className={clsx(styles.Giang_8)}>
         <div className={clsx(styles.Giang_9)}>
+        <h3 className={clsx(styles.Giang_7)}>
+          Công ty công nghệ Minh Giang Protech Computer
+          <br />
+        </h3>
           Được thành lập vào năm 2019 với tên gọi là Minh Giang Protech Computer
           nhằm đáp ứng nhu cầu của thị trường lúc bấy giờ như giải pháp văn
           phòng, hệ thống mạng, giải pháp kỹ thuật số và các sản phẩm trên không
@@ -48,11 +46,8 @@ function Section1() {
           Mr. Đàm Minh Giang
           <br />
         </h3>
-      </div>
-      <div className={clsx(styles.Giang_26)}>
         <h3 className={clsx(styles.Giang_27)}>
           CEO
-          <br />
         </h3>
       </div>
     </div>
