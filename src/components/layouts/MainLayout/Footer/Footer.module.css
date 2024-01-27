@@ -1,0 +1,236 @@
+.footer {
+    background-color: var(--Giang-primary-color-1);
+    color: #fff;
+}
+
+.footerWaveSvg {
+    background-color: transparent;
+    display: block;
+    height: 30px;
+    position: relative;
+    top: -1px;
+    width: 100%;
+}
+
+.footerWaveBG {
+    fill: var(--Giang-background-color);
+}
+
+.footerContent {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 350px;
+    position: relative;
+}
+
+.footerContentCol {
+    box-sizing: border-box;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    color: #fff;
+}
+
+.footerContentCol ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerLogo img{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.footerMenu {
+    margin-top: 30px;
+}
+
+.footerMenu a{
+    color: #fff;
+}
+
+.footerMenuName {
+    color: #fffff2;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.footerMenuList {
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.footerMenuList li {
+    margin-top: 5px;
+}
+
+
+.footerButton:hover {
+    background-color: #fffff2;
+    color: var(--Giang-primary-color);
+}
+
+.footerButton {
+    background-color: var(--Giang-primary-color);
+    border-radius: 21px;
+    color: #fffff2;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 18px;
+    padding: 12px 30px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .2s;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+
+.footerSocials {
+    bottom: -1px;
+    height: 54px;
+    position: absolute;
+    right: 0;
+    width: 236px;
+}
+
+.footerIconSvg {
+    height: 54px;
+    left: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 236px;
+}
+
+.footerIcon {
+    fill: var(--Giang-primary-color);
+}
+
+.footerSocial.facebook {
+    height: 45px;
+    left: 3px;
+    top: 11px;
+    width: 45px;
+}
+
+.SocialIconSvg {
+    fill: #fffff2;
+    transition: fill .2s;
+}
+
+.footerSocial.twitter {
+    height: 50px;
+    left: 62px;
+    top: 3px;
+    width: 50px;
+}
+
+.footerSocial.youtube {
+    height: 43px;
+    left: 123px;
+    top: 12px;
+    width: 43px;
+}
+
+.footerSocial.github {
+    height: 55px;
+    left: 172px;
+    top: 7px;
+    width: 55px;
+}
+
+.footerSocial {
+    display: block;
+    padding: 10px;
+    position: absolute;
+}
+
+
+.footerSocialIcon {
+    display: block;
+}
+
+
+
+.footerCopyright {
+    background-color: var(--Giang-primary-color);
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.footerCopyrightWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.footerCopyrightText {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.footerCopyrightLink, .footerCopyrightLink a{
+    color: #fff;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .footerContent {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1230px;
+        padding: 40px 15px 750px;
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .footerContent {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1230px;
+        padding: 40px 15px 540px;
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .footerContent {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1230px;
+        padding: 40px 15px 340px;
+        position: relative;
+    }
+
+    .footerWaveSvg {
+        height: 50px;
+    }
+
+    .footerContentCol {
+        width: 33.33%;
+    }
+}

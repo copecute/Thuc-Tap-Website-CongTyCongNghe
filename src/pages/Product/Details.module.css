@@ -1,0 +1,170 @@
+
+.cardWrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.imgDisplay{
+    overflow: hidden;
+}
+.imgShowcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.imgShowcase img{
+    object-fit: cover;
+    min-width: 100%;
+}
+.imgSelect{
+    display: flex;
+}
+.imgItem{
+    margin: 0.3rem;
+}
+.imgItem:nth-child(1),
+.imgItem:nth-child(2),
+.imgItem:nth-child(3){
+    margin-right: 0;
+}
+.imgItem:hover{
+    opacity: 0.8;
+}
+.productContent{
+    padding: 2rem 1rem;
+}
+.productTitle{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 1rem 0;
+}
+.productTitle::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background: #12263a;
+}
+.productLink{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    background: #256eff;
+    color: #fff;
+    padding: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+.productLink:hover{
+    opacity: 0.9;
+}
+.productRating{
+    color: #ffc107;
+}
+.productRating span{
+    font-weight: 600;
+    color: #252525;
+}
+.productPrice{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.productPrice span{
+    font-weight: 400;
+}
+.lastPrice span{
+    color: #f64749;
+    text-decoration: line-through;
+}
+.newPrice span{
+    color: #256eff;
+}
+.productDetail h2{
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+}
+.productDetail p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+.productDetail ul{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+.productDetail ul li{
+    margin: 0;
+    list-style: none;
+    /* background: url(shoes_images/checked.png) left center no-repeat; */
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.productDetail ul li span{
+    font-weight: 400;
+}
+.purchaseInfo{
+    margin: 1.5rem 0;
+}
+.purchaseInfo input,
+.purchaseInfo .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+.purchaseInfo input{
+    width: 60px;
+}
+.purchaseInfo .btn{
+    cursor: pointer;
+    color: #fff;
+}
+.purchaseInfo .btn:first-of-type{
+    background: #256eff;
+}
+.purchaseInfo .btn:last-of-type{
+    background: #f64749;
+}
+.purchaseInfo .btn:hover{
+    opacity: 0.9;
+}
+
+@media screen and (min-width: 992px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .cardWrapper{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .productImgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .productContent{
+        padding-top: 0;
+    }
+}
