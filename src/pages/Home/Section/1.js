@@ -3,10 +3,13 @@ import Styles from './1.module.css';
 import Link from 'components/Link'
 import SliderShow from 'components/SliderShow';
 
+import SliderShow1 from 'assets/images/SliderShow1.jpg';
+import SliderShow2 from 'assets/images/SliderShow2.jpg';
+
 function Session1() {
   const SliderShowImages = [
-    'https://sieuthiserver.vn/wp-content/uploads/2023/02/Hunonic.jpg',
-    'https://sieuthiserver.vn/wp-content/uploads/2023/04/tang-tai-nghe.jpg',
+    SliderShow1,
+    SliderShow2,
   ];
   
   return (

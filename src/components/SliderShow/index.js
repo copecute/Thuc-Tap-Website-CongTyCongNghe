@@ -30,9 +30,9 @@ function SliderShow({images}) {
 
   return (
     <div className={clsx(Styles.slider)}>
-      <button className={clsx(Styles.prev, Styles.button)} onClick={prevSlide}>
+      <div className={clsx(Styles.prev, Styles.GiangSliderControl)} onClick={prevSlide}>
         &lt;
-      </button>
+      </div>
       {/* Phần hiển thị slides */}
       <div
         className={clsx(Styles.slides)}
@@ -48,9 +48,9 @@ function SliderShow({images}) {
           </div>
         ))}
       </div>
-      <button className={clsx(Styles.next, Styles.button)} onClick={nextSlide}>
+      <div className={clsx(Styles.next, Styles.GiangSliderControl)} onClick={nextSlide}>
         &gt;
-      </button>
+      </div>
     </div>
   );
 }
