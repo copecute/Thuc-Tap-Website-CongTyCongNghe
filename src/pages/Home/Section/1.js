@@ -17,7 +17,7 @@ function Session1() {
         Cho thuê máy chủ giá rẻ với phần cứng mạnh mẽ, ổn định tuyệt đối, hỗ trợ kỹ thuật 24/7
         </p>
         <div className={clsx(Styles.btn_wrapper)}>
-          <Link to="/about" className='btn primaryBtn'>
+          <Link to="/product?title=Máy%20chủ%20Dell%20PowerEdge%20R750XS&category=Máy%20chủ&image1=https://i.imgur.com/sNU0kLT.png&image2=https://i.imgur.com/sNU0kLT.png&image3=https://i.imgur.com/sNU0kLT.png&image4=https://i.imgur.com/sNU0kLT.png&oldPrice=120.309.000đ%20&Price=100.309.000đ" className='btn primaryBtn'>
             Xem sản phẩm
           </Link>
           <button className={clsx(Styles.nhanbaogia_btn)}>Nhận báo giá</button>
