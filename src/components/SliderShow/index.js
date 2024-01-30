@@ -44,7 +44,7 @@ function SliderShow({images}) {
             key={index}
             className={clsx(Styles.slide, { [Styles.active]: index === currentIndex })}
           >
-            <img src={image} alt={`Slide ${index}`} />
+            <img src={image} alt={`Minh Giang Pc Slider ${index}`} />
           </div>
         ))}
       </div>

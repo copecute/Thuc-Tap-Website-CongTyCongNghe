@@ -2,9 +2,13 @@ import { Fragment, React } from 'react';
 import clsx from 'clsx';
 import Styles from './Header.module.css';
 import Dropdown from './dropdown';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import Link from 'components/Link'
 
 function Menu({ showMenu }) {
+  const handleLinkClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <Fragment>
       <div className={clsx(Styles.nav__menu, showMenu && Styles.showMenu)}>
@@ -13,6 +17,7 @@ function Menu({ showMenu }) {
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? clsx(Styles.active, Styles.nav__link) : Styles.nav__link)}
+              onClick={handleLinkClick}
             >
               Trang chủ
             </NavLink>
@@ -422,6 +427,7 @@ function Menu({ showMenu }) {
             <NavLink
               to="/about"
               className={({ isActive }) => (isActive ? clsx(Styles.nav__link, Styles.active) : Styles.nav__link)}
+              onClick={handleLinkClick}
             >
               Giới thiệu
             </NavLink>

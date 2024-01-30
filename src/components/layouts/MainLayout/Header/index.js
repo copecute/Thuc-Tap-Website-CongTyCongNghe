@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import clsx from 'clsx';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'components/Link'
 
 import Styles from './Header.module.css';
 import Menu from './menu';

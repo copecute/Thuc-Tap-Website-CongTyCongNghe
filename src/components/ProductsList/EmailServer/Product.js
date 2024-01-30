@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'components/Link'
 import clsx from 'clsx';
 
 import Style from 'components/ProductsList/ServerList/ProductsList.module.css';

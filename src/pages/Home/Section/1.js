@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 import Styles from './1.module.css';
-// import Giang from 'assets/images/giang.png'
-import { Link } from 'react-router-dom';
+import Link from 'components/Link'
 import SliderShow from 'components/SliderShow';
 
 function Session1() {
@@ -33,9 +32,8 @@ function Session1() {
           </div>
         </div>
         <div className={clsx(Styles.gridItem2)}>
-          <div className={clsx(Styles.team_img_wrapper)}>
+          <div className={clsx(Styles.Giang_img_wrapper)}>
             <SliderShow images={SliderShowImages} />
-            {/* <img src={Giang} alt="team-img" /> */}
           </div>
         </div>
       </div>

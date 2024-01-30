@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, Fragment } from 'react';
 import clsx from 'clsx';
 import Styles from './Details.module.css';
 import Home1 from 'pages/Home/Section/1.module.css';
-import { Link } from 'react-router-dom';
+import Link from 'components/Link'
 
 function ProductDetails({ title, oldPrice, Price, category, image1, image2, image3, image4 }) {
   // State quản lý id của hình ảnh đang hiển thị

@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import Styles from "./Footer.module.css";
-import { Link } from "react-router-dom";
+import Link from 'components/Link'
 import { Fragment } from "react";
 
 import logo from "assets/images/logo.png";

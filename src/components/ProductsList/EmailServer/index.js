@@ -4,7 +4,7 @@ import Style from 'components/ProductsList/ServerList/ProductsList.module.css';
 import Product from './Product';
 import loading from 'assets/images/loading.svg';
 
-import { Link } from 'react-router-dom';
+import Link from 'components/Link'
 function EmailServer() {
   const [isLoading, setIsLoading] = useState(false);
 
