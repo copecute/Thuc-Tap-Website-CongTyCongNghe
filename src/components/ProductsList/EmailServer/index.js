@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import { Fragment, useState } from 'react';
-import Style from './ProductsList.module.css';
+import Style from 'components/ProductsList/ServerList/ProductsList.module.css';
 import Product from './Product';
 import loading from 'assets/images/loading.svg';
 

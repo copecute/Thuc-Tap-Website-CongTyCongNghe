@@ -5,12 +5,11 @@ import { Link } from 'react-router-dom';
 import SliderShow from 'components/SliderShow';
 
 function Session1() {
-  const images = [
-    'https://d1hjkbq40fs2x4.cloudfront.net/2017-08-21/files/landscape-photography_1645.jpg',
-    'https://i.pinimg.com/736x/6d/7f/6d/6d7f6d16d3dd35f0eee515bacd8e4ade.jpg',
-    'https://i.pinimg.com/736x/6e/74/63/6e7463744c9fdf25c505adfd51902f50.jpg',
+  const SliderShowImages = [
+    'https://sieuthiserver.vn/wp-content/uploads/2023/02/Hunonic.jpg',
+    'https://sieuthiserver.vn/wp-content/uploads/2023/04/tang-tai-nghe.jpg',
   ];
-
+  
   return (
     <section className={clsx(Styles.wrapper)}>
       <div className={clsx(Styles.gridCols2)}>
@@ -35,7 +34,7 @@ function Session1() {
         </div>
         <div className={clsx(Styles.gridItem2)}>
           <div className={clsx(Styles.team_img_wrapper)}>
-            <SliderShow images={images} />
+            <SliderShow images={SliderShowImages} />
             {/* <img src={Giang} alt="team-img" /> */}
           </div>
         </div>

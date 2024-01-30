@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 
-import Style from './ProductsList.module.css';
+import Style from 'components/ProductsList/ServerList/ProductsList.module.css';
 
 
 function Product({ title, oldPrice, Price, category, star, image1, image2, image3, image4 }) {
