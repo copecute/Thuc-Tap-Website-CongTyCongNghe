@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import Styles from './2.module.css';
-import logo from 'assets/images/logo.png';
 import iconCamera from 'assets/images/icons/camera.svg';
 import iconDataProcess from 'assets/images/icons/data-process.svg';
 import iconMaintenance from 'assets/images/icons/maintenance.svg';
