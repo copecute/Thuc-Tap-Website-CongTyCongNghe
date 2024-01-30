@@ -13,12 +13,12 @@
 @media screen and (min-width: 800px){
     .productItems{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 @media screen and (min-width: 1200px){
     .productItems{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
     .product{
         margin-right: 1rem;

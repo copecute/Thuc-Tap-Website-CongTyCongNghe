@@ -1,2 +1,2 @@
-export { default as ServerList } from "./ServerList";
-export { default as EmailServer } from "./EmailServer";
+export { default as ServerList } from "./ServerList.js";
+export { default as EmailServer } from "./EmailServer.js";

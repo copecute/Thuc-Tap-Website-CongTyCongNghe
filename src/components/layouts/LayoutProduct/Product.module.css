@@ -16,3 +16,22 @@
     flex: 0 0 25%;
     max-width: 25%;
 }
+
+/* RESPONSIVE */
+@media only screen and (max-width: 850px) {
+   .mainContent {
+    display: unset;
+}
+.mainContent .left, .mainContent .right {
+    width: 100%;
+    max-width: 100%;
+}
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles cho tablet */
+  }
+  
+  @media only screen and (min-width: 1025px) {
+    /* Styles cho desktop */
+  }

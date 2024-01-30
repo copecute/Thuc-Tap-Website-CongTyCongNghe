@@ -9,16 +9,6 @@
     display: block;
 }
 
-.Giang_2 {
-    margin-left: -10px;
-    margin-right: -10px;
-    display: flex;
-    flex-flow: row wrap;
-    box-sizing: border-box;
-    text-rendering: geometricprecision;
-    padding: 0px;
-}
-
 .Giang_5 {
     margin-bottom: 15px;
     box-sizing: border-box;
@@ -37,6 +27,9 @@
 
 .Giang_6 img {
     max-width: 40px;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
 }
 
 .Giang_9 {
@@ -83,3 +76,15 @@
     border: 0;
     height: 1px;
 }
+
+@media only screen and (max-width: 850px) {
+    .Giang_0 {
+        display: flex;
+    }
+    .Giang_6 {
+        display: unset;
+    }
+    .Giang_12 {
+        display: none;
+    }
+   }

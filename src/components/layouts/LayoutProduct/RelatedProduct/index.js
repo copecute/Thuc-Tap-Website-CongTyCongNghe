@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import Styles from './RelatedProduct.module.css';
-import Product from 'components/ProductsList/ServerList/Product';
+import Product from 'components/ProductsList/Product';
 import { Fragment } from 'react';
 
 function RelatedProduct() {
@@ -44,8 +44,20 @@ function RelatedProduct() {
             image3="https://i.imgur.com/mI3bX3K.png"
             image4="https://i.imgur.com/nuHfOUR.png"
           />
+
+          <Product
+            title="Máy chủ lắp ráp - I9 13900K/ 128GB Ram/ 2TB SSD/ RTX 4080 16GB"
+            oldPrice="80.000.000đ "
+            Price="50.000.000đ "
+            category="Máy chủ"
+            star="⭐⭐⭐⭐"
+            image1="https://i.imgur.com/pPow29r.png"
+            image2="https://i.imgur.com/nuHfOUR.png"
+            image3="https://i.imgur.com/mI3bX3K.png"
+            image4="https://i.imgur.com/nuHfOUR.png"
+          />
         </div>
-    </div>
+      </div>
     </Fragment>
   );
 }

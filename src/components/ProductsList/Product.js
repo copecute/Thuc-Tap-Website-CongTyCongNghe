@@ -1,12 +1,11 @@
-import Link from 'components/Link'
+import Link from 'components/Link';
 import clsx from 'clsx';
 
 import Style from './ProductsList.module.css';
 
-
 function Product({ title, oldPrice, Price, category, star, image1, image2, image3, image4 }) {
   const linkProduct = `/product?title=${title}&category=${category}&image1=${image1}&image2=${image2}&image3=${image3}&image4=${image4}&oldPrice=${oldPrice}&Price=${Price}`;
-  
+
   // tính phần trăm giảm giá
   const oldPriceNumber = parseFloat(oldPrice.replace('đ', '').replace(/\./g, '').replace(',', '.'));
   const PriceNumber = parseFloat(Price.replace('đ', '').replace(/\./g, '').replace(',', '.'));
@@ -15,9 +14,7 @@ function Product({ title, oldPrice, Price, category, star, image1, image2, image
   return (
     <div className={clsx(Style.product)}>
       <div className={clsx(Style.productContent)}>
-        <div className={clsx(Style.productImg)}>
-          {<img src={image1} alt={title} />}
-        </div>
+        <div className={clsx(Style.productImg)}>{<img src={image1} alt={title} />}</div>
         <div className={clsx(Style.productBtns)}>
           <Link to={linkProduct} className={clsx(Style.btnCart)}>
             Thêm vào giỏ

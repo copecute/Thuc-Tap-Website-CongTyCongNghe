@@ -66,6 +66,31 @@ ul, ol{
   transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
+/* breadcrumb */
+ul.breadcrumb {
+  padding: 10px 0;
+  list-style: none;
+}
+ul.breadcrumb li {
+  display: inline-block;
+    text-shadow: none;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-size: 13px;
+  color: #8e8e8e;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: ">";
+}
+ul.breadcrumb li a {
+  color: #8e8e8e;
+}
+ul.breadcrumb li a:hover {
+
+}
+
 /* RESPONSIVE */
 @media only screen and (max-width: 600px) {
   .GiangContent {

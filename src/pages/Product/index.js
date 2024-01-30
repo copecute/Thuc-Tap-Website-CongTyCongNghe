@@ -1,5 +1,5 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom'; // Correct import
+import React, { Fragment } from 'react';
+import { useLocation, Link } from 'react-router-dom'; // Correct import
 import ProductDetails from './Details';
 
 const Product = () => {
@@ -11,6 +11,22 @@ const Product = () => {
   const getParam = (paramName) => params.get(paramName) || '';
 
   return (
+    <Fragment>
+            <ul class="breadcrumb">
+        <li>
+          <Link to="/">Trang chủ</Link>
+        </li>
+        <li>
+          <Link to="#">Sản phẩm</Link>
+        </li>
+        <li>
+          <Link to="#">{getParam('category')}</Link>
+        </li>
+        <li>
+          <Link to="#">{getParam('title')}</Link>
+        </li>
+      </ul>
+
     <ProductDetails
       title={getParam('title')}
       oldPrice={getParam('oldPrice')}
@@ -21,6 +37,7 @@ const Product = () => {
       image3={getParam('image3')}
       image4={getParam('image4')}
     />
+    </Fragment>
   );
 };
 
