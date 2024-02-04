@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, Fragment } from 'react';
 import clsx from 'clsx';
 import Styles from './Details.module.css';
 import Home1 from 'pages/Home/Section/1.module.css';
-import Link from 'components/Link'
+import Link from 'components/Link';
 
 function ProductDetails({ title, oldPrice, Price, category, image1, image2, image3, image4 }) {
   // State quản lý id của hình ảnh đang hiển thị
@@ -134,6 +134,27 @@ function ProductDetails({ title, oldPrice, Price, category, image1, image2, imag
       </div>
 
       <div className={clsx(Styles.container)}>
+        <table className={clsx(Styles.tableDetails)}>
+          <tbody>
+            <tr>
+              <th>Model:</th>
+              <td>{title}</td>
+            </tr>
+            <tr>
+              <th>Màu sắc:</th>
+              <td>Hồng</td>
+            </tr>
+            <tr>
+              <th>Năm sản xuất:</th>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <th>Địa điểm bảo hành:</th>
+              <td>MinhGiangPC.Com</td>
+            </tr>
+          </tbody>
+        </table>
+
         <h3>CAM KẾT BÁN HÀNG</h3>
         <p>- Minh Giang PC cam kết mang đến cho quý khách hàng dịch vụ, sản phẩm tốt, an toàn nhất</p>
         <p>

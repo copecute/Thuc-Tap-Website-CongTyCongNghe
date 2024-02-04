@@ -130,6 +130,8 @@
 .offInfo .smTitle{
     background: var(--carribean-green);
     color: white;
+    font-size: 13px;
+    text-transform: uppercase;
     display: inline-block;
     padding: 0.5rem;
     position: absolute;

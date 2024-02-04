@@ -23,7 +23,12 @@
 
 .Giang_img_wrapper {
   width: 100%;
-  height: 400px;
+}
+
+.Giang_img_wrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 .gridCols2 {
@@ -31,8 +36,6 @@
   height: 100%;
   display: grid;
   grid-template-columns: 60% 40%;
-  ;
-  gap: 4rem;
 }
 
 .gridItem1 {

@@ -11,12 +11,12 @@ function Menu({ showMenu }) {
   };
   return (
     <Fragment>
-      <div className={clsx(Styles.nav__menu, showMenu && Styles.showMenu)}>
-        <ul className={clsx(Styles.nav__list)}>
+      <div className={clsx(Styles.nav_menu, showMenu && Styles.showMenu)}>
+        <ul className={clsx(Styles.nav_list)}>
           <li>
             <NavLink
               to="/"
-              className={({ isActive }) => (isActive ? clsx(Styles.active, Styles.nav__link) : Styles.nav__link)}
+              className={({ isActive }) => (isActive ? clsx(Styles.active, Styles.nav_link) : Styles.nav_link)}
               onClick={handleLinkClick}
             >
               Trang chủ
@@ -27,9 +27,9 @@ function Menu({ showMenu }) {
             index="1"
             title="Emai Server"
             dropdownContent={
-              <div className={clsx(Styles.dropdown__content)}>
-                <Link to="#" className={clsx(Styles.dropdown__group)}>
-                  <div className={clsx(Styles.dropdown__icon)}>
+              <div className={clsx(Styles.dropdown_content)}>
+                <Link to="#" className={clsx(Styles.dropdown_group)}>
+                  <div className={clsx(Styles.dropdown_icon)}>
                     <svg
                       fill="#00c894"
                       xmlns="http://www.w3.org/2000/svg"
@@ -57,16 +57,16 @@ function Menu({ showMenu }) {
                       </g>
                     </svg>
                   </div>
-                  <span className={clsx(Styles.dropdown__title)}>Email Server Pro</span>
-                  <ul className="dropdown__list">
+                  <span className={clsx(Styles.dropdown_title)}>Email Server Pro</span>
+                  <ul className={clsx(Styles.dropdown_list)}>
                     <li>Email theo thương hiệu doanh nghiệp</li>
                     <li>An toàn bảo mật vượt trội</li>
                     <li>Đáp ứng các yêu cầu phức tạp nhất</li>
                   </ul>
                 </Link>
 
-                <Link to="#" className={clsx(Styles.dropdown__group)}>
-                  <div className={clsx(Styles.dropdown__icon)}>
+                <Link to="#" className={clsx(Styles.dropdown_group)}>
+                  <div className={clsx(Styles.dropdown_icon)}>
                     <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M12 22C12.5523 22 13 21.5523 13 21C13 20.4477 12.5523 20 12 20V22ZM12.4453 4.01216C12.9968 4.04235 13.4683 3.61979 13.4985 3.06833C13.5287 2.51687 13.1061 2.04535 12.5547 2.01515L12.4453 4.01216ZM11.7627 9.23726L11.0556 8.53015L11.7627 9.23726ZM17.411 3.58902L18.1181 4.29613L17.411 3.58902ZM9 15L8.01005 14.8586C7.96411 15.1802 8.07723 15.504 8.3134 15.727C8.54957 15.9501 8.87936 16.0445 9.19778 15.9802L9 15ZM9.04745 14.6678L8.0575 14.5264L8.0575 14.5264L9.04745 14.6678ZM9.48793 14.9016L9.29015 13.9213L9.48793 14.9016ZM12.8012 13.7247L12.2287 12.9048H12.2287L12.8012 13.7247ZM11.564 14.3882L11.9302 15.3187H11.9302L11.564 14.3882ZM10.1791 10.9786L9.34943 10.4203V10.4203L10.1791 10.9786ZM9.49029 12.3561L8.54586 12.0274V12.0274L9.49029 12.3561ZM16.7071 4.29289C16.3166 3.90237 15.6834 3.90237 15.2929 4.29289C14.9024 4.68342 14.9024 5.31658 15.2929 5.70711L16.7071 4.29289ZM18.1213 8.53553C18.5118 8.92606 19.145 8.92606 19.5355 8.53553C19.9261 8.14501 19.9261 7.51184 19.5355 7.12132L18.1213 8.53553ZM16 16C15.4477 16 15 16.4477 15 17C15 17.5523 15.4477 18 16 18V16ZM21.88 10.8011C21.7701 10.2598 21.2423 9.91012 20.701 10.02C20.1598 10.1299 19.8101 10.6577 19.92 11.1989L21.88 10.8011ZM12 20C7.58172 20 4 16.4183 4 12H2C2 17.5228 6.47715 22 12 22V20ZM4 12C4 7.58172 7.58172 4 12 4V2C6.47715 2 2 6.47715 2 12H4ZM12 4C12.1495 4 12.298 4.00409 12.4453 4.01216L12.5547 2.01515C12.371 2.00509 12.186 2 12 2V4ZM12.4698 9.94436L18.1181 4.29613L16.7039 2.88191L11.0556 8.53015L12.4698 9.94436ZM19.5323 5.71034L13.6703 11.5723L15.0845 12.9865L20.9465 7.12455L19.5323 5.71034ZM9.98995 15.1414L10.0374 14.8093L8.0575 14.5264L8.01005 14.8586L9.98995 15.1414ZM9.29015 13.9213L8.80222 14.0198L9.19778 15.9802L9.68571 15.8818L9.29015 13.9213ZM13.6703 11.5723C12.8844 12.3582 12.5736 12.664 12.2287 12.9048L13.3737 14.5447C13.8964 14.1797 14.3472 13.7239 15.0845 12.9865L13.6703 11.5723ZM9.68571 15.8818C10.7079 15.6755 11.3371 15.5522 11.9302 15.3187L11.1977 13.4577C10.8064 13.6118 10.3796 13.7015 9.29015 13.9213L9.68571 15.8818ZM12.2287 12.9048C11.9079 13.1288 11.5618 13.3144 11.1977 13.4577L11.9302 15.3187C12.44 15.1181 12.9245 14.8583 13.3737 14.5447L12.2287 12.9048ZM11.0556 8.53015C10.243 9.34283 9.74031 9.83942 9.34943 10.4203L11.0087 11.5369C11.2665 11.1538 11.6034 10.8108 12.4698 9.94436L11.0556 8.53015ZM10.0374 14.8093C10.2107 13.5963 10.2829 13.121 10.4347 12.6848L8.54586 12.0274C8.31572 12.6886 8.22004 13.3887 8.0575 14.5264L10.0374 14.8093ZM9.34943 10.4203C9.01364 10.9192 8.74356 11.4594 8.54586 12.0274L10.4347 12.6848C10.5759 12.2791 10.7688 11.8933 11.0087 11.5369L9.34943 10.4203ZM19.5323 4.29613C19.9228 4.68665 19.9228 5.31981 19.5323 5.71034L20.9465 7.12455C22.1181 5.95298 22.1181 4.05348 20.9465 2.88191L19.5323 4.29613ZM20.9465 2.88191C19.7749 1.71034 17.8754 1.71034 16.7039 2.88191L18.1181 4.29613C18.5086 3.9056 19.1418 3.9056 19.5323 4.29613L20.9465 2.88191ZM15.2929 5.70711L18.1213 8.53553L19.5355 7.12132L16.7071 4.29289L15.2929 5.70711ZM20 12C20 14.2091 18.2091 16 16 16V18C19.3137 18 22 15.3137 22 12H20ZM19.92 11.1989C19.9723 11.4569 20 11.7247 20 12H22C22 11.5903 21.9588 11.1893 21.88 10.8011L19.92 11.1989Z"
@@ -74,16 +74,16 @@ function Menu({ showMenu }) {
                       />
                     </svg>
                   </div>
-                  <span className={clsx(Styles.dropdown__title)}>Chữ Ký Số Email</span>
-                  <ul className={clsx(Styles.dropdown__list)}>
+                  <span className={clsx(Styles.dropdown_title)}>Chữ Ký Số Email</span>
+                  <ul className={clsx(Styles.dropdown_list)}>
                     <li>Chống giả mạo</li>
                     <li>Chống sao chép</li>
                     <li>Được các chương trình email xác thực</li>
                   </ul>
                 </Link>
 
-                <Link to="#" className={clsx(Styles.dropdown__group)}>
-                  <div className={clsx(Styles.dropdown__icon)}>
+                <Link to="#" className={clsx(Styles.dropdown_group)}>
+                  <div className={clsx(Styles.dropdown_icon)}>
                     <svg
                       fill="#00c894"
                       xmlns="http://www.w3.org/2000/svg"
@@ -114,8 +114,8 @@ function Menu({ showMenu }) {
                       </g>
                     </svg>
                   </div>
-                  <span className={clsx(Styles.dropdown__title)}>Quản Trị Email Server</span>
-                  <ul className={clsx(Styles.dropdown__list)}>
+                  <span className={clsx(Styles.dropdown_title)}>Quản Trị Email Server</span>
+                  <ul className={clsx(Styles.dropdown_list)}>
                     <li>Hỗ trợ kỹ thuật 24/7 với độ ưu tiên cao.</li>
                     <li>Đội ngũ chuyên viên về email đảm trách.</li>
                     <li>Hỗ trợ theo quy trình quy chuẩn khắc khe.</li>
@@ -129,9 +129,9 @@ function Menu({ showMenu }) {
             index="2"
             title="Máy chủ"
             dropdownContent={
-              <div className={clsx(Styles.dropdown__content)}>
-                <Link to="#" className={clsx(Styles.dropdown__group)}>
-                  <div className={clsx(Styles.dropdown__icon)}>
+              <div className={clsx(Styles.dropdown_content)}>
+                <Link to="#" className={clsx(Styles.dropdown_group)}>
+                  <div className={clsx(Styles.dropdown_icon)}>
                     <svg
                       fill="#00c894"
                       width="40px"
@@ -144,16 +144,16 @@ function Menu({ showMenu }) {
                       <path d="M811.4 368.9C765.6 248 648.9 162 512.2 162S258.8 247.9 213 368.8C126.9 391.5 63.5 470.2 64 563.6 64.6 668 145.6 752.9 247.6 762c4.7.4 8.7-3.3 8.7-8v-60.4c0-4-3-7.4-7-7.9-27-3.4-52.5-15.2-72.1-34.5-24-23.5-37.2-55.1-37.2-88.6 0-28 9.1-54.4 26.2-76.4 16.7-21.4 40.2-36.9 66.1-43.7l37.9-10 13.9-36.7c8.6-22.8 20.6-44.2 35.7-63.5 14.9-19.2 32.6-36 52.4-50 41.1-28.9 89.5-44.2 140-44.2s98.9 15.3 140 44.3c19.9 14 37.5 30.8 52.4 50 15.1 19.3 27.1 40.7 35.7 63.5l13.8 36.6 37.8 10c54.2 14.4 92.1 63.7 92.1 120 0 33.6-13.2 65.1-37.2 88.6-19.5 19.2-44.9 31.1-71.9 34.5-4 .5-6.9 3.9-6.9 7.9V754c0 4.7 4.1 8.4 8.8 8 101.7-9.2 182.5-94 183.2-198.2.6-93.4-62.7-172.1-148.6-194.9z" />
                     </svg>
                   </div>
-                  <span className={clsx(Styles.dropdown__title)}>Thuê máy chủ</span>
-                  <ul className="dropdown__list">
+                  <span className={clsx(Styles.dropdown_title)}>Thuê máy chủ</span>
+                  <ul className={clsx(Styles.dropdown_list)}>
                     <li>Hạ tầng ổn định</li>
                     <li>phần cứng mạnh mẽ</li>
                     <li>Ổn định tuyệt đối</li>
                   </ul>
                 </Link>
 
-                <Link to="#" className={clsx(Styles.dropdown__group)}>
-                  <div className={clsx(Styles.dropdown__icon)}>
+                <Link to="#" className={clsx(Styles.dropdown_group)}>
+                  <div className={clsx(Styles.dropdown_icon)}>
                     <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M22 19H14M2 19H10" stroke="#00c894" strokeWidth="1.5" strokeLinecap="round" />
                       <path d="M12 17V14" stroke="#00c894" strokeWidth="1.5" strokeLinecap="round" />
@@ -176,16 +176,16 @@ function Menu({ showMenu }) {
                       <circle cx="6" cy="11" r="1" fill="#00c894" />
                     </svg>
                   </div>
-                  <span className={clsx(Styles.dropdown__title)}>Mua máy chủ</span>
-                  <ul className={clsx(Styles.dropdown__list)}>
+                  <span className={clsx(Styles.dropdown_title)}>Mua máy chủ</span>
+                  <ul className={clsx(Styles.dropdown_list)}>
                     <li>Bộ não số hóa của doanh nghiệp</li>
                     <li>Chi phí hợp lý</li>
                     <li>Thi công nhanh chóng</li>
                   </ul>
                 </Link>
 
-                <Link to="#" className={clsx(Styles.dropdown__group)}>
-                  <div className={clsx(Styles.dropdown__icon)}>
+                <Link to="#" className={clsx(Styles.dropdown_group)}>
+                  <div className={clsx(Styles.dropdown_icon)}>
                     <svg
                       width="40px"
                       height="40px"
@@ -233,16 +233,16 @@ function Menu({ showMenu }) {
                       </g>
                     </svg>
                   </div>
-                  <span className={clsx(Styles.dropdown__title)}>Thuê chỗ đặt máy chủ</span>
-                  <ul className={clsx(Styles.dropdown__list)}>
+                  <span className={clsx(Styles.dropdown_title)}>Thuê chỗ đặt máy chủ</span>
+                  <ul className={clsx(Styles.dropdown_list)}>
                     <li>Đường truyền tốc độ cao</li>
                     <li>Datacenter chuẩn quốc tế</li>
                     <li>Nhận báo giá ngay</li>
                   </ul>
                 </Link>
 
-                <Link to="#" className={clsx(Styles.dropdown__group)}>
-                  <div className={clsx(Styles.dropdown__icon)}>
+                <Link to="#" className={clsx(Styles.dropdown_group)}>
+                  <div className={clsx(Styles.dropdown_icon)}>
                     <svg
                       width="40px"
                       height="40px"
@@ -288,8 +288,8 @@ function Menu({ showMenu }) {
                       </g>
                     </svg>
                   </div>
-                  <span className={clsx(Styles.dropdown__title)}>Quản trị máy chủ</span>
-                  <ul className={clsx(Styles.dropdown__list)}>
+                  <span className={clsx(Styles.dropdown_title)}>Quản trị máy chủ</span>
+                  <ul className={clsx(Styles.dropdown_list)}>
                     <li>Hỗ trợ và tư vấn các vấn đề server</li>
                     <li>Sửa chữa, bảo trì server nhanh chóng</li>
                   </ul>
@@ -303,9 +303,9 @@ function Menu({ showMenu }) {
             index="3"
             title="Dịch vụ"
             dropdownContent={
-              <div className={clsx(Styles.dropdown__content)}>
-                <Link to="#" className={clsx(Styles.dropdown__group)}>
-                  <div className={clsx(Styles.dropdown__icon)}>
+              <div className={clsx(Styles.dropdown_content)}>
+                <Link to="#" className={clsx(Styles.dropdown_group)}>
+                  <div className={clsx(Styles.dropdown_icon)}>
                     <svg width="40px" height="40px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                       <defs>
                         <style
@@ -342,16 +342,16 @@ function Menu({ showMenu }) {
                       <circle className="c" cx="28.2712" cy="18.4376" r=".75" />
                     </svg>
                   </div>
-                  <span className={clsx(Styles.dropdown__title)}>Thiết kế Phần mềm</span>
-                  <ul className="dropdown__list">
+                  <span className={clsx(Styles.dropdown_title)}>Thiết kế Phần mềm</span>
+                  <ul className={clsx(Styles.dropdown_list)}>
                     <li>Bám sát nhu cầu</li>
                     <li>Đội ngũ giàu kinh ngiệm</li>
                     <li>Phát triển nhanh chóng</li>
                   </ul>
                 </Link>
 
-                <Link to="#" className={clsx(Styles.dropdown__group)}>
-                  <div className={clsx(Styles.dropdown__icon)}>
+                <Link to="#" className={clsx(Styles.dropdown_group)}>
+                  <div className={clsx(Styles.dropdown_icon)}>
                     <svg
                       width="40px"
                       height="40px"
@@ -362,16 +362,16 @@ function Menu({ showMenu }) {
                       <path d="M36.44 122.22a17.39 17.39 0 002.22 7.78c4.29 7.07 13.3 7.11 16.27 7.13h.88A180.41 180.41 0 0075.52 136c5.15 14.62 12.49 26 21.85 33.77a47.84 47.84 0 0030.16 11.33 38.42 38.42 0 0011.41-1.7 6.7 6.7 0 00-4-12.78c-9 2.8-20.41 0-29-7.16-7.6-6.32-13.66-15.93-18-28.55a110.71 110.71 0 01-6-36.84C82 82.6 84 73.6 88 66.57c6.17-10.85 18.9-18.45 32.38-19.37 13-.87 26.6 4 37.44 13.25a6.7 6.7 0 009-10l-.23-.2c-13.49-11.56-30.64-17.56-47.06-16.44-18.1 1.22-34.63 11.22-43.15 26.08a58.41 58.41 0 00-6.87 20.7 54.32 54.32 0 00-7.3-.7c1.57-17.06 4.12-32 13.21-42.86 13.61-16.26 38-18.41 56-17.35 19 1.12 32 5.95 39.55 14.77 7.17 8.35 9.31 20 11.58 32.25.63 3.4 1.29 6.88 2 10.34A49.63 49.63 0 00171 78a6.65 6.65 0 00-4.86 9 46.66 46.66 0 01-2.43 39 6.69 6.69 0 005.34 9.92l10.1.79c1.22.09 2.48.19 3.77.27q-.09 3.08-.34 6.13c-7 2.83-15.13 2.6-23.74 2.34-3.41-.09-6.88-.2-10.39-.11l.44-11.55a6.69 6.69 0 00-13.38-.51l-.73 19a6.68 6.68 0 006.39 7h.3a6.62 6.62 0 00.88-.06 100.75 100.75 0 0116.11-.36c10 .29 20.44.59 30.38-3.84a11.58 11.58 0 005.27-4.21 12 12 0 001.72-5.48q.44-4.5.49-9c7.26-1.59 13.21-5.67 16.36-11.23 2.45-4.33 3-9 3.22-13 .52-9.71-1-17.38-4.79-23.43a24.52 24.52 0 00-12.43-10.25c-1.18-4.49-2.06-9.17-3-14.09-2.49-13.49-5.07-27.44-14.59-38.53-9.96-11.8-26.02-18.12-48.88-19.46-21.13-1.22-49.9 1.59-67.08 22.12-13.22 15.81-15.28 37.86-16.64 54.31a22.1 22.1 0 00-2.43 1.47C41.37 87.58 38 93 36.53 99.47a52.22 52.22 0 00-.71 15.33c.18 2.45.37 4.94.62 7.42zm166.2-10.92c-.14 2.46-.42 5.23-1.51 7.16-1.27 2.24-4.16 4-7.72 4.77-.53.11-1.08.2-1.64.27a6.67 6.67 0 00-2.46-.35 6.42 6.42 0 00-2.41.59c-2.18 0-4.4-.21-6.6-.38l-.68-.06a60 60 0 001.68-33 37.37 37.37 0 015.48.44 5.9 5.9 0 00.95.17l1.2.24a6.6 6.6 0 004.37-.5 11.23 11.23 0 016.53 4.93c2.26 3.69 3.17 8.82 2.81 15.72zM55 123.73c-3.57 0-4.66-.57-4.91-.73a12.64 12.64 0 01-.33-2.12c-.23-2.32-.42-4.66-.57-7-.24-3.65-.43-7.84.4-11.52a12.09 12.09 0 014.24-7.24c3.47-2.47 9-2 14.67-1.12a123.74 123.74 0 003.22 29 166.77 166.77 0 01-16.72.73zm189.22 109.89a9.26 9.26 0 01.11 1.17 6.7 6.7 0 01-6.7 6.7c-12.77 0-21.67.28-30.29.56-38.79 1.23-77.92 1.85-117 1.85q-39 0-77.88-.82a6.69 6.69 0 01-6.54-6.37 6.41 6.41 0 01-.2-2.72c.88-7.22 2.28-15.64 6.07-23.26 4.4-8.84 11.6-15.32 19.75-17.79 5.25-1.59 10.55-1.46 15.21-1.35a53.66 53.66 0 008.5-.23 23 23 0 0018.57-17 6.7 6.7 0 1113.28 1.78 7.2 7.2 0 01-.28 1.22 36.35 36.35 0 01-29.72 27.26 63.55 63.55 0 01-10.68.36c-4-.1-7.81-.19-11 .78-4.63 1.4-8.87 5.39-11.64 10.94a47 47 0 00-3.93 13.11c62.11 1.2 125 .83 187.08-1.15 6.87-.22 14-.44 23-.53a52.15 52.15 0 00-3.9-12c-2.56-5-6.35-8.6-10.41-9.74-2.74-.78-6.06-.63-9.56-.47-1.89.09-3.84.18-5.86.13a47.45 47.45 0 01-31.27-12.8c-5.79-5.48-8.42-11.77-7.39-17.71a6.7 6.7 0 0113.2 2.29c-.22 1.29 1.1 3.53 3.39 5.68a33.86 33.86 0 0022.35 9.15c1.57 0 3.22 0 5-.12 4.21-.19 9-.41 13.82 1 7.65 2.16 14.47 8.21 18.71 16.59 3.48 6.88 5 14.42 6.24 21.07a6.56 6.56 0 01-.03 2.42z"></path>
                     </svg>
                   </div>
-                  <span className={clsx(Styles.dropdown__title)}>Tổng đài số</span>
-                  <ul className={clsx(Styles.dropdown__list)}>
+                  <span className={clsx(Styles.dropdown_title)}>Tổng đài số</span>
+                  <ul className={clsx(Styles.dropdown_list)}>
                     <li>Tự động hoá quy trình</li>
                     <li>Đàm thoại hội nghị.</li>
                     <li>đầu số đa dạng (1900/1800..)</li>
                   </ul>
                 </Link>
 
-                <Link to="#" className={clsx(Styles.dropdown__group)}>
-                  <div className={clsx(Styles.dropdown__icon)}>
+                <Link to="#" className={clsx(Styles.dropdown_group)}>
+                  <div className={clsx(Styles.dropdown_icon)}>
                     <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M8 9.00006H6.2C5.0799 9.00006 4.51984 9.00006 4.09202 9.21805C3.71569 9.40979 3.40973 9.71575 3.21799 10.0921C3 10.5199 3 11.08 3 12.2001V17.8001C3 18.9202 3 19.4802 3.21799 19.908C3.40973 20.2844 3.71569 20.5903 4.09202 20.7821C4.51984 21.0001 5.07989 21.0001 6.2 21.0001H17.787C18.9071 21.0001 19.4671 21.0001 19.895 20.7821C20.2713 20.5903 20.5772 20.2844 20.769 19.908C20.987 19.4802 20.987 18.9202 20.987 17.8001V12.0001M6 15.0001H6.01M10 15H10.01M11.5189 12.8946L12.8337 12.6347C13.5432 12.4945 13.8979 12.4244 14.2287 12.2953C14.5223 12.1807 14.8013 12.0318 15.06 11.8516C15.3514 11.6487 15.607 11.393 16.1184 10.8816L21.2668 5.73321C21.9541 5.04596 21.9541 3.9317 21.2668 3.24444C20.5796 2.55719 19.4653 2.55719 18.7781 3.24445L13.5416 8.48088C13.0625 8.96004 12.8229 9.19963 12.6294 9.47121C12.4576 9.71232 12.3131 9.97174 12.1986 10.2447C12.0696 10.5522 11.9921 10.8821 11.837 11.5417L11.5189 12.8946Z"
@@ -382,16 +382,16 @@ function Menu({ showMenu }) {
                       />
                     </svg>
                   </div>
-                  <span className={clsx(Styles.dropdown__title)}>Chữ ký số</span>
-                  <ul className={clsx(Styles.dropdown__list)}>
+                  <span className={clsx(Styles.dropdown_title)}>Chữ ký số</span>
+                  <ul className={clsx(Styles.dropdown_list)}>
                     <li>Chữ ký số USB TOKEN</li>
                     <li>Chữ ký số HSM</li>
                     <li>Chữ ký số HSM nội bộ</li>
                   </ul>
                 </Link>
 
-                <Link className={clsx(Styles.dropdown__group)}>
-                  <div className={clsx(Styles.dropdown__icon)}>
+                <Link className={clsx(Styles.dropdown_group)}>
+                  <div className={clsx(Styles.dropdown_icon)}>
                     <svg
                       width="40px"
                       height="40px"
@@ -412,8 +412,8 @@ function Menu({ showMenu }) {
                       />
                     </svg>
                   </div>
-                  <span className={clsx(Styles.dropdown__title)}>Hoá đơn điện tử</span>
-                  <ul className={clsx(Styles.dropdown__list)}>
+                  <span className={clsx(Styles.dropdown_title)}>Hoá đơn điện tử</span>
+                  <ul className={clsx(Styles.dropdown_list)}>
                     <li>Đáp ứng nghiệp vụ chứng từ</li>
                     <li>Xuất theo mẫu & xuất số lượng lớn</li>
                     <li>Theo dõi công nợ</li>
@@ -426,14 +426,14 @@ function Menu({ showMenu }) {
           <li>
             <NavLink
               to="/about"
-              className={({ isActive }) => (isActive ? clsx(Styles.nav__link, Styles.active) : Styles.nav__link)}
+              className={({ isActive }) => (isActive ? clsx(Styles.nav_link, Styles.active) : Styles.nav_link)}
               onClick={handleLinkClick}
             >
               Giới thiệu
             </NavLink>
           </li>
           <li className={clsx(Styles.Cart)}>
-            <Link to="#" className={clsx(Styles.nav__link)}>
+            <Link to="#" className={clsx(Styles.nav_link)}>
               <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   stroke="currentColor"

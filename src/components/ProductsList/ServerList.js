@@ -31,10 +31,10 @@ function ServerList() {
             Price="100.309.000đ "
             category="Máy chủ"
             star="⭐⭐⭐⭐"
-            image1="https://i.imgur.com/sNU0kLT.png"
-            image2="https://i.imgur.com/sNU0kLT.png"
-            image3="https://i.imgur.com/sNU0kLT.png"
-            image4="https://i.imgur.com/sNU0kLT.png"
+            image1="/assets/images/products/server/product-1-1.png"
+            image2="/assets/images/products/server/product-1-1.png"
+            image3="/assets/images/products/server/product-1-1.png"
+            image4="/assets/images/products/server/product-1-1.png"
           />
 
           <Product
@@ -43,10 +43,10 @@ function ServerList() {
             Price="63.690.000đ"
             category="Máy chủ"
             star="⭐⭐⭐"
-            image1="https://i.imgur.com/bYxDA22.png"
-            image2="https://i.imgur.com/tbsokkz.png"
-            image3="https://i.imgur.com/HIVYMek.png"
-            image4="https://i.imgur.com/Lij7hIk.png"
+            image1="/assets/images/products/server/product-2-1.png"
+            image2="/assets/images/products/server/product-2-2.png"
+            image3="/assets/images/products/server/product-2-3.png"
+            image4="/assets/images/products/server/product-2-4.png"
           />
 
           <Product
@@ -55,10 +55,10 @@ function ServerList() {
             Price="50.000.000đ "
             category="Máy chủ"
             star="⭐⭐⭐⭐"
-            image1="https://i.imgur.com/pPow29r.png"
-            image2="https://i.imgur.com/nuHfOUR.png"
-            image3="https://i.imgur.com/mI3bX3K.png"
-            image4="https://i.imgur.com/nuHfOUR.png"
+            image1="/assets/images/products/server/product-3-1.png"
+            image2="/assets/images/products/server/product-3-2.png"
+            image3="/assets/images/products/server/product-3-3.png"
+            image4="/assets/images/products/server/product-3-4.png"
           />
 
           <Product
@@ -67,10 +67,10 @@ function ServerList() {
             Price="100.309.000đ "
             category="Máy chủ"
             star="⭐⭐⭐⭐"
-            image1="https://i.imgur.com/sNU0kLT.png"
-            image2="https://i.imgur.com/sNU0kLT.png"
-            image3="https://i.imgur.com/sNU0kLT.png"
-            image4="https://i.imgur.com/sNU0kLT.png"
+            image1="/assets/images/products/server/product-1-1.png"
+            image2="/assets/images/products/server/product-1-1.png"
+            image3="/assets/images/products/server/product-1-1.png"
+            image4="/assets/images/products/server/product-1-1.png"
           />
 
           <Product
@@ -79,10 +79,10 @@ function ServerList() {
             Price="100.309.000đ "
             category="Máy chủ"
             star="⭐⭐⭐⭐"
-            image1="https://i.imgur.com/sNU0kLT.png"
-            image2="https://i.imgur.com/sNU0kLT.png"
-            image3="https://i.imgur.com/sNU0kLT.png"
-            image4="https://i.imgur.com/sNU0kLT.png"
+            image1="/assets/images/products/server/product-1-1.png"
+            image2="/assets/images/products/server/product-1-1.png"
+            image3="/assets/images/products/server/product-1-1.png"
+            image4="/assets/images/products/server/product-1-1.png"
           />
 
           <Product
@@ -91,10 +91,10 @@ function ServerList() {
             Price="100.309.000đ "
             category="Máy chủ"
             star="⭐⭐⭐⭐"
-            image1="https://i.imgur.com/sNU0kLT.png"
-            image2="https://i.imgur.com/sNU0kLT.png"
-            image3="https://i.imgur.com/sNU0kLT.png"
-            image4="https://i.imgur.com/sNU0kLT.png"
+            image1="/assets/images/products/server/product-1-1.png"
+            image2="/assets/images/products/server/product-1-1.png"
+            image3="/assets/images/products/server/product-1-1.png"
+            image4="/assets/images/products/server/product-1-1.png"
           />
 
           <Product
@@ -103,10 +103,10 @@ function ServerList() {
             Price="100.309.000đ "
             category="Máy chủ"
             star="⭐⭐⭐⭐"
-            image1="https://i.imgur.com/sNU0kLT.png"
-            image2="https://i.imgur.com/sNU0kLT.png"
-            image3="https://i.imgur.com/sNU0kLT.png"
-            image4="https://i.imgur.com/sNU0kLT.png"
+            image1="/assets/images/products/server/product-1-1.png"
+            image2="/assets/images/products/server/product-1-1.png"
+            image3="/assets/images/products/server/product-1-1.png"
+            image4="/assets/images/products/server/product-1-1.png"
           />
 
           <Product
@@ -115,10 +115,10 @@ function ServerList() {
             Price="100.309.000đ "
             category="Máy chủ"
             star="⭐⭐⭐⭐"
-            image1="https://i.imgur.com/sNU0kLT.png"
-            image2="https://i.imgur.com/sNU0kLT.png"
-            image3="https://i.imgur.com/sNU0kLT.png"
-            image4="https://i.imgur.com/sNU0kLT.png"
+            image1="/assets/images/products/server/product-1-1.png"
+            image2="/assets/images/products/server/product-1-1.png"
+            image3="/assets/images/products/server/product-1-1.png"
+            image4="/assets/images/products/server/product-1-1.png"
           />
         </div>
 

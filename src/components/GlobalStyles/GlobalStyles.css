@@ -5,23 +5,32 @@
   --Giang-primary-color-hover: #e3fff8;
   --Giang-background-color: #F9F9F9;
 }
-body{
-	line-height: 1.5;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+body {
+  line-height: 1.5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--Giang-background-color);
 }
+
 * {
-	box-sizing: border-box;
-	margin:0;
-	padding:0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   border: 0;
 }
+
+*:focus {
+  outline: none;
+}
+
 a {
-	text-decoration: none;
+  text-decoration: none;
   color: black;
 }
-ul, ol{
-	list-style: none;
+
+ul,
+ol {
+  list-style: none;
 }
 
 .GiangContent {
@@ -43,6 +52,7 @@ ul, ol{
   letter-spacing: 1px;
   transition: 0.4s;
 }
+
 .btn:hover {
   transform: translateY(-3px);
   background-color: var(--Giang-primary-color-1);
@@ -71,31 +81,34 @@ ul.breadcrumb {
   padding: 10px 0;
   list-style: none;
 }
+
 ul.breadcrumb li {
   display: inline-block;
-    text-shadow: none;
-    text-transform: uppercase;
-    line-height: 24px;
-    font-size: 13px;
+  text-shadow: none;
+  text-transform: uppercase;
+  line-height: 24px;
+  font-size: 13px;
   color: #8e8e8e;
 }
+
 ul.breadcrumb li+li:before {
   padding: 8px;
   color: black;
   content: ">";
 }
+
 ul.breadcrumb li a {
   color: #8e8e8e;
 }
-ul.breadcrumb li a:hover {
 
-}
+ul.breadcrumb li a:hover {}
 
 /* RESPONSIVE */
 @media only screen and (max-width: 600px) {
   .GiangContent {
-    padding: 80px 10px 30px 10px;
+    padding: 10px 10px 30px 10px;
   }
+
   .primaryBtn {
     width: 140px;
     height: 55px;
@@ -106,13 +119,14 @@ ul.breadcrumb li a:hover {
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .GiangContent {
-    padding: 80px 10px 30px 10px;
+    padding: 10px 10px 30px 10px;
   }
 }
 
 @media only screen and (min-width: 1025px) {
+
   /* Styles cho desktop */
   .GiangContent {
-    padding: 100px 10px 30px 10px;
+    padding: 20px 10px 30px 10px;
   }
 }

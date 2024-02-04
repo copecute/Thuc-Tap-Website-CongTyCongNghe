@@ -12,7 +12,7 @@ const Product = () => {
 
   return (
     <Fragment>
-            <ul class="breadcrumb">
+            <ul className="breadcrumb">
         <li>
           <Link to="/">Trang chủ</Link>
         </li>
@@ -20,22 +20,22 @@ const Product = () => {
           <Link to="#">Sản phẩm</Link>
         </li>
         <li>
-          <Link to="#">{getParam('category')}</Link>
+          <Link to="#">{getParam('category') || 'Máy Chủ Lắp Ráp - I9 13900K/ 128GB Ram/ 2TB SSD/ RTX 4080 16GB'}</Link>
         </li>
         <li>
-          <Link to="#">{getParam('title')}</Link>
+          <Link to="#">{getParam('title') || 'Máy chủ'}</Link>
         </li>
       </ul>
 
     <ProductDetails
-      title={getParam('title')}
-      oldPrice={getParam('oldPrice')}
-      Price={getParam('Price')}
-      category={getParam('category')}
-      image1={getParam('image1')}
-      image2={getParam('image2')}
-      image3={getParam('image3')}
-      image4={getParam('image4')}
+      title={getParam('title') || 'Máy Chủ Lắp Ráp - I9 13900K/ 128GB Ram/ 2TB SSD/ RTX 4080 16GB'}
+      oldPrice={getParam('oldPrice') || '80.000.000đ'}
+      Price={getParam('Price') || '50.000.000đ'}
+      category={getParam('category') || 'Máy chủ'}
+      image1={getParam('image1') || '/assets/images/products/server/product-3-1.png'}
+      image2={getParam('image2') || '/assets/images/products/server/product-3-2.png'}
+      image3={getParam('image3') || '/assets/images/products/server/product-3-3.png'}
+      image4={getParam('image4') || '/assets/images/products/server/product-3-4.png'}
     />
     </Fragment>
   );

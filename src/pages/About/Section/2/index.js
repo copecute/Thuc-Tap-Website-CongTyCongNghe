@@ -4,7 +4,7 @@ import pic1 from 'assets/images/static-about-us-pic-1.png';
 
 function Session3() {
   return (
-    <section className={clsx(Styles.wrapper)}>
+    <section className={clsx(Styles.wrapper)} id='contact'>
       <div className={clsx(Styles.gridCols2)}>
         <div className={clsx(Styles.gridItem1)}>
           <h1 className={clsx(Styles.HeadingTitle)}>SƠ LƯỢC VỀ MINH GIANG PC</h1>

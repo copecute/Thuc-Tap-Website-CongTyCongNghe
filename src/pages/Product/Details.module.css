@@ -1,4 +1,3 @@
-
 .Giang_0 {
     border: 0.8px solid rgb(221, 221, 221);
     border-radius: 4px;
@@ -109,55 +108,87 @@
     list-style: outside none none;
 }
 
-.container{
+.tableDetails {
+    width: 100%;
+}
+
+.tableDetails table,
+td,
+th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.tableDetails table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableDetails th,
+td {
+    padding: 15px;
+}
+
+.container {
     margin: 0px 0px 10px 0px;
     padding: 5px;
     background-color: #fff;
     max-width: 1200px;
     border-radius: 3px;
 }
-img{
+
+img {
     width: 100%;
     display: block;
 }
-.imgDisplay{
+
+.imgDisplay {
     overflow: hidden;
 }
-.imgShowcase{
+
+.imgShowcase {
     display: flex;
     width: 100%;
     transition: all 0.5s ease;
 }
-.imgShowcase img{
+
+.imgShowcase img {
     object-fit: cover;
     min-width: 100%;
 }
-.imgSelect{
+
+.imgSelect {
     display: flex;
 }
-.imgItem{
+
+.imgItem {
     border: 1px solid #ccc;
     margin: 0.3rem;
 }
+
 .imgItem:nth-child(1),
 .imgItem:nth-child(2),
-.imgItem:nth-child(3){
+.imgItem:nth-child(3) {
     margin-right: 0;
 }
-.imgItem:hover{
+
+.imgItem:hover {
     opacity: 0.8;
 }
-.productContent{
+
+.productContent {
     padding: 2rem 1rem;
 }
-.productTitle{
+
+.productTitle {
     font-size: 25px;
     text-transform: capitalize;
     font-weight: 700;
     position: relative;
     margin: 1rem 0;
 }
-.productTitle::after{
+
+.productTitle::after {
     content: "";
     position: absolute;
     left: 0;
@@ -185,11 +216,12 @@ img{
     font-weight: 500;
 }
 
-.purchaseInfo{
+.purchaseInfo {
     margin: 1.5rem 0;
 }
+
 .purchaseInfo input,
-.purchaseInfo .btn{
+.purchaseInfo .btn {
     border: 1.5px solid #ddd;
     border-radius: 25px;
     text-align: center;
@@ -198,37 +230,43 @@ img{
     margin-right: 0.2rem;
     margin-bottom: 1rem;
 }
-.purchaseInfo input{
+
+.purchaseInfo input {
     width: 60px;
 }
-.purchaseInfo .btn{
+
+.purchaseInfo .btn {
     cursor: pointer;
     color: #fff;
 }
-.purchaseInfo .btn:first-of-type{
+
+.purchaseInfo .btn:first-of-type {
     background: #256eff;
 }
-.purchaseInfo .btn:last-of-type{
+
+.purchaseInfo .btn:last-of-type {
     background: #f64749;
 }
-.purchaseInfo .btn:hover{
+
+.purchaseInfo .btn:hover {
     opacity: 0.9;
 }
 
-@media screen and (min-width: 992px){
-    .card{
+@media screen and (min-width: 992px) {
+    .card {
         padding: 10px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1.5rem;
     }
 
-    .productImgs{
+    .productImgs {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .productContent{
+
+    .productContent {
         padding-top: 0;
     }
 }
