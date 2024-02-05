@@ -1,0 +1,89 @@
+.Giang_0 {
+    background: #fff;
+    border: 0.8px solid #dae2e6;
+    padding: 15px;
+    font-size: 15px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 95px;
+}
+
+.Giang_5 {
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    text-rendering: geometricprecision;
+    padding: 0px;
+}
+
+.Giang_6 {
+    box-sizing: border-box;
+    text-rendering: geometricprecision;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Giang_6 img {
+    max-width: 40px;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.Giang_9 {
+    flex: 1 1 0%;
+    padding-left: 15px;
+    box-sizing: border-box;
+    text-rendering: geometricprecision;
+    margin: 0px;
+    padding: 0px 0px 0px 15px;
+}
+
+.Giang_10 {
+    color: rgb(49, 49, 49);
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    text-rendering: geometricprecision;
+    cursor: default;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Giang_11 {
+    font-size: 14px;
+    line-height: 18.2px;
+    box-sizing: border-box;
+    text-rendering: geometricprecision;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Giang_12 {
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    text-rendering: geometricprecision;
+    padding: 0px 15px;
+}
+
+.Giang_13 {
+    background: rgba(0,0,0,.06);
+    margin: 0;
+    border: 0;
+    height: 1px;
+}
+
+@media only screen and (max-width: 850px) {
+    .Giang_0 {
+        display: flex;
+    }
+    .Giang_6 {
+        display: unset;
+    }
+    .Giang_12 {
+        display: none;
+    }
+   }

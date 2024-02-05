@@ -1,10 +1,10 @@
 import clsx from 'clsx';
 import { Fragment, useState } from 'react';
-import Style from './ProductsList.module.css';
+import Style from 'components/ProductsList/ProductsList.module.css';
 import Product from './Product';
 import loading from 'assets/images/loading.svg';
 
-import { Link } from 'react-router-dom';
+import Link from 'components/Link';
 function EmailServer() {
   const [isLoading, setIsLoading] = useState(false);
 
@@ -30,10 +30,10 @@ function EmailServer() {
             Price="520.000đ / tháng"
             category="500 Account, 200 GB"
             star="1 Domain"
-            image1="https://i.imgur.com/0szwxLT.png"
-            image2="https://i.imgur.com/0szwxLT.png"
-            image3="https://i.imgur.com/0szwxLT.png"
-            image4="https://i.imgur.com/0szwxLT.png"
+            image1="/assets/images/products/email/product-1-1.png"
+            image2="/assets/images/products/email/product-1-1.png"
+            image3="/assets/images/products/email/product-1-1.png"
+            image4="/assets/images/products/email/product-1-1.png"
           />
 
           <Product
@@ -42,10 +42,10 @@ function EmailServer() {
             Price="720.000đ / tháng"
             category="1000 Account, 500 GB"
             star="2 Domain"
-            image1="https://i.imgur.com/0szwxLT.png"
-            image2="https://i.imgur.com/0szwxLT.png"
-            image3="https://i.imgur.com/0szwxLT.png"
-            image4="https://i.imgur.com/0szwxLT.png"
+            image1="/assets/images/products/email/product-1-1.png"
+            image2="/assets/images/products/email/product-1-1.png"
+            image3="/assets/images/products/email/product-1-1.png"
+            image4="/assets/images/products/email/product-1-1.png"
           />
 
           <Product
@@ -54,10 +54,22 @@ function EmailServer() {
             Price="1020.000đ / tháng"
             category="1500 Account, 900 GB"
             star="5 Domain"
-            image1="https://i.imgur.com/0szwxLT.png"
-            image2="https://i.imgur.com/0szwxLT.png"
-            image3="https://i.imgur.com/0szwxLT.png"
-            image4="https://i.imgur.com/0szwxLT.png"
+            image1="/assets/images/products/email/product-1-1.png"
+            image2="/assets/images/products/email/product-1-1.png"
+            image3="/assets/images/products/email/product-1-1.png"
+            image4="/assets/images/products/email/product-1-1.png"
+          />
+
+          <Product
+            title="Email Server 4"
+            oldPrice="1649.000đ / tháng"
+            Price="1020.000đ / tháng"
+            category="1500 Account, 900 GB"
+            star="5 Domain"
+            image1="/assets/images/products/email/product-1-1.png"
+            image2="/assets/images/products/email/product-1-1.png"
+            image3="/assets/images/products/email/product-1-1.png"
+            image4="/assets/images/products/email/product-1-1.png"
           />
         </div>
 

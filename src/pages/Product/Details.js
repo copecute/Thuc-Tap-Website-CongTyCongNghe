@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, Fragment } from 'react';
 import clsx from 'clsx';
 import Styles from './Details.module.css';
 import Home1 from 'pages/Home/Section/1.module.css';
-import { Link } from 'react-router-dom';
+import Link from 'components/Link';
 
 function ProductDetails({ title, oldPrice, Price, category, image1, image2, image3, image4 }) {
   // State quản lý id của hình ảnh đang hiển thị
@@ -45,16 +45,16 @@ function ProductDetails({ title, oldPrice, Price, category, image1, image2, imag
 
   return (
     <Fragment>
-      <div className={clsx(Styles.cardWrapper)}>
+      <div className={clsx(Styles.container)}>
         <div className={clsx(Styles.card)}>
           {/* card left */}
           <div className={clsx(Styles.productImgs)}>
             <div className={clsx(Styles.imgDisplay)}>
               <div className={clsx(Styles.imgShowcase)} ref={imgShowcaseRef}>
-              <img src={image1} alt={title} />
-              <img src={image2} alt={title} />
-              <img src={image3} alt={title} />
-              <img src={image4} alt={title} />
+                <img src={image1} alt={title} />
+                <img src={image2} alt={title} />
+                <img src={image3} alt={title} />
+                <img src={image4} alt={title} />
               </div>
             </div>
             <div className={clsx(Styles.imgSelect)}>
@@ -83,25 +83,44 @@ function ProductDetails({ title, oldPrice, Price, category, image1, image2, imag
           {/* card right */}
           <div className={clsx(Styles.productContent)}>
             <h2 className={clsx(Styles.productTitle)}>{title}</h2>
-            <Link to="#" className={clsx(Styles.productLink)}>
-              {category}
-            </Link>
+
             <div className={clsx(Styles.productPrice)}>
-              <p className={clsx(Styles.lastPrice)}>
-                Giá cũ: <span>{oldPrice}</span>
-              </p>
-              <p className={clsx(Styles.newPrice)}>
-                Giá: <span>{Price}</span>
-              </p>
+              <span className={clsx(Styles.price)}>{Price}</span>
+              <span className={clsx(Styles.oldPrice)}>{oldPrice}</span>
             </div>
-            <div className={clsx(Styles.productDetail)}>
-              <h2>Mô tả: </h2>
-              <p>{title}</p>
-              <p>
-                MÁY CHỦ DELL POWEREDGE R750XS, INTEL XEON SILVER 4314, UP TO 8X3.5INCH/ 16GB RDIMM/ 2TB HDD NLSAS/ H755/
-                IDRAC9 ENT/ DVD/ BRC 5720 QP 1GBE/ 2X800W PS/ QUICKSYNC2/ TPM 2.0_71015486 - WARRANTY 03 YEAR
+
+            <div className={clsx(Styles.Giang_0)}>
+              <p className={clsx(Styles.Giang_1)}>
+                <strong className={clsx(Styles.Giang_2)}>KHUYẾN MÃI TRỊ GIÁ 6.000.000₫</strong> Giá và khuyến mãi dự
+                kiến áp dụng đến 30/09
               </p>
+              <div className={clsx(Styles.Giang_3)}>
+                <ul className={clsx(Styles.Giang_4)}>
+                  <li className={clsx(Styles.Giang_5)}>
+                    Mua online thêm quà: Giảm giá 3,000,000đ (Không áp dụng kèm Thu cũ đổi mới)
+                  </li>
+                  <li className={clsx(Styles.Giang_5)}>Giảm giá 3,000,000đ</li>
+                  <li className={clsx(Styles.Giang_5)}>
+                    Lên đời người yêu mới thời thượng, tài trợ đổi mới 3,000,000đ
+                  </li>
+                  <li className={clsx(Styles.Giang_5)}>
+                    Tặng 2 suất mua Đồng hồ thời trang giảm 40% (không áp dụng thêm khuyến mãi khác)
+                  </li>
+                  <li className={clsx(Styles.Giang_5)}>
+                    Phụ kiện mua kèm giảm đến 20% (không áp dụng đồng thời KM khác).
+                  </li>
+                </ul>
+                <div className={clsx(Styles.Giang_10)}>
+                  <p className={clsx(Styles.Giang_11)}>Mua tại cửa hàng tặng thêm quà</p>
+                  <ul className={clsx(Styles.Giang_12)}>
+                    <li className={clsx(Styles.Giang_5)}>Tặng 100.000₫ mua hàng tại Cao Bằng</li>
+                  </ul>
+                </div>
+              </div>
             </div>
+            <p>
+              Danh mục: <b>{category}</b>
+            </p>
             <div className={clsx(Home1.btn_wrapper)}>
               <button type="button" className="btn primaryBtn">
                 Mua ngay
@@ -112,6 +131,36 @@ function ProductDetails({ title, oldPrice, Price, category, image1, image2, imag
             </div>
           </div>
         </div>
+      </div>
+
+      <div className={clsx(Styles.container)}>
+        <table className={clsx(Styles.tableDetails)}>
+          <tbody>
+            <tr>
+              <th>Model:</th>
+              <td>{title}</td>
+            </tr>
+            <tr>
+              <th>Màu sắc:</th>
+              <td>Hồng</td>
+            </tr>
+            <tr>
+              <th>Năm sản xuất:</th>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <th>Địa điểm bảo hành:</th>
+              <td>MinhGiangPC.Com</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>CAM KẾT BÁN HÀNG</h3>
+        <p>- Minh Giang PC cam kết mang đến cho quý khách hàng dịch vụ, sản phẩm tốt, an toàn nhất</p>
+        <p>
+          - Chữ tín luôn được đặt lên hàng đầu (với khách hàng, nhà cung cấp), luôn đứng về phía khách hàng để thấu hiểu
+        </p>
+        <p>- Đi kèm với chất lượng tốt, giá cả cạnh tranh nhất và những chế độ dịch vụ tốt nhất</p>
       </div>
     </Fragment>
   );

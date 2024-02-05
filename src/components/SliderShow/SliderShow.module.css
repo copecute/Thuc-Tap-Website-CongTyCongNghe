@@ -1,0 +1,54 @@
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.slider:hover .GiangSliderControl {
+  opacity: 1;
+  transform: translate(0,-50%);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* hiệu ứng transform */
+}
+
+.slide {
+  flex: 0 0 100%;
+  height: 400px;
+}
+
+.slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.GiangSliderControl {
+  transition: opacity .2s,transform .4s;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
+}
+
+.GiangSliderControl:hover {
+  font-size: 50px;
+  transition: 0.2s;
+}
+
+.GiangSliderControl.next {
+  right: 0;
+}
+
+.button.prev {
+  left: 0;
+}
