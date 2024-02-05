@@ -1,12 +1,11 @@
 .Giang_0 {
     background: #fff;
-    border: 0.8px solid rgb(218, 226, 230);
+    border: 0.8px solid #dae2e6;
     padding: 15px;
-    border-radius: 2px;
     font-size: 15px;
-    box-sizing: border-box;
-    text-rendering: geometricprecision;
-    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 95px;
 }
 
 .Giang_5 {

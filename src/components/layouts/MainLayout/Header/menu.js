@@ -22,7 +22,7 @@ function Menu({ showMenu }) {
               Trang chủ
             </NavLink>
           </li>
-          {/*=============== DROPDOWN 1 ===============*/}
+          
           <Dropdown
             index="1"
             title="Emai Server"
@@ -124,7 +124,7 @@ function Menu({ showMenu }) {
               </div>
             }
           />
-          {/*=============== DROPDOWN 2 ===============*/}
+          
           <Dropdown
             index="2"
             title="Máy chủ"
@@ -298,7 +298,6 @@ function Menu({ showMenu }) {
             }
           />
 
-          {/*=============== DROPDOWN 3 ===============*/}
           <Dropdown
             index="3"
             title="Dịch vụ"
@@ -311,7 +310,7 @@ function Menu({ showMenu }) {
                         <style
                           dangerouslySetInnerHTML={{
                             __html:
-                              '.c{fill:#00c894;}.d{fill:none;stroke:#00c894;stroke-linecap:round;stroke-linejoin:round;}',
+                              '.c{fill:#00c894;}.d{fill:none;stroke:#00c894;strokeLinecap:round;stroke-linejoin:round;}',
                           }}
                         />
                       </defs>
@@ -432,6 +431,7 @@ function Menu({ showMenu }) {
               Giới thiệu
             </NavLink>
           </li>
+
           <li className={clsx(Styles.Cart)}>
             <Link to="#" className={clsx(Styles.nav_link)}>
               <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
