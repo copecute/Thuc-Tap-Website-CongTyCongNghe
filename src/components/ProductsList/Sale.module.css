@@ -1,0 +1,77 @@
+.sale {
+    padding: 35px 10px 80px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.title {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.title h2 {
+    padding-left: 0px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    line-height: 35px;
+    color: rgb(255, 0, 0);
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.title h2 img {
+    max-width: 80%;
+    vertical-align: middle;
+    border-style: none;
+    box-sizing: border-box;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard syntax */
+    -webkit-user-drag: none; /* Safari */
+    user-drag: none; /* Non-standard, Chrome/Opera */
+    -moz-user-drag: none; /* Non-standard, Firefox */
+    -ms-user-drag: none; /* IE/Edge */
+}
+
+.flexTime {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.timerFlex {
+    height: 35px;
+    line-height: 35px;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    box-sizing: border-box;
+}
+
+.timeIn {
+    margin-left: 10px;
+    letter-spacing: 4px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.timeIn span {
+    color: rgb(250, 255, 9);
+    display: inline-block;
+    padding: 0px 10px;
+    height: 35px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 4px 0px;
+    background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 64, 64);
+    border-radius: 3px;
+    text-align: center;
+    box-sizing: border-box;
+}

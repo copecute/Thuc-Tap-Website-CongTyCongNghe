@@ -44,6 +44,8 @@
   flex: 33%;
   align-items: center;
   justify-content: space-around;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .header .logo img {
